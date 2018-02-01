@@ -8,7 +8,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'nvie/vim-flake8'
+Plugin 'w0rp/ale'
+Plugin 'junegunn/fzf' 
 
 call vundle#end()
 
@@ -16,7 +17,6 @@ filetype plugin indent on
 syntax on
 syntax enable
 set background=dark
-let g:solarized_termcolors=256
 colorscheme solarized
 
 au BufNewFile,BufRead *.py
@@ -47,4 +47,3 @@ let mapleader = "\\"
 map <Leader>jd :YcmCompleter GoTo<CR>
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-autocmd BufWritePost *.py call Flake8()
