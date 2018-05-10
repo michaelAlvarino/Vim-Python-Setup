@@ -6,7 +6,6 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'w0rp/ale'
 Plugin 'skywind3000/asyncrun.vim'
 Plugin 'maralla/completor.vim'
@@ -14,7 +13,6 @@ Plugin 'maralla/completor.vim'
 call vundle#end()
 
 set background=dark
-colorscheme solarized
 
 filetype plugin indent on
 syntax on
