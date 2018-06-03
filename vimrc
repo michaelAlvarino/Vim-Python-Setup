@@ -46,5 +46,7 @@ inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr> pumvisible() ? "\<C-y>\<cr>" : "\<cr>"
 
+let g:completor_python_binary = system('which', 'python')
 let g:completor_gcc_binary = '/usr/bin/g++'
 let g:completor_gocode_binary = expand($GOPATH) . "/bin/gocode"
+let g:completor_racer_binary = '/home/michael/.cargo/bin/racer'
